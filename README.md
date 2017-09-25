@@ -30,8 +30,14 @@ A Postgres role was added for the catalog app to use for DB access, using peer a
 
 2. [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
 
-3. [https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
+3. [https://stackoverflow.com/questions/13329354/flask-mod-wsgi-and-apache-importerror](https://stackoverflow.com/questions/13329354/flask-mod-wsgi-and-apache-importerror)
 
-4. [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+4. [https://stackoverflow.com/questions/12081789/pythons-working-directory-when-running-with-wsgi-and-apache](https://stackoverflow.com/questions/12081789/pythons-working-directory-when-running-with-wsgi-and-apache)
 
-5. [https://askubuntu.com/a/524362](https://askubuntu.com/a/524362)
+4. [https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
+
+5. [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+
+6. [https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress](https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress)
+
+7. [https://askubuntu.com/a/524362](https://askubuntu.com/a/524362)
