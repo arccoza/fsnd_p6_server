@@ -16,6 +16,10 @@
 
 The catalog python3 app was pulled from [github](https://github.com/arccoza/fsnd_p4_catalog) into `/etc/www/fsnd_p4_catalog`. The `app.wsgi` file was later created for Apache and pulled, the same wsgi file is in this repo.
 
+There were issues with module references when running the app through WSGI. The app does not use a virtualenv, nor global packages, but rather locally installed dependencies in the `lib` directory (installed with `pip install -r requirements.txt -t lib`). The original app imported a local module to add `lib` to the site packages path, but under WSGI this didn't work, so in `app.wsgi` additional package paths had to be added to ensure local modules would load.
+
+There was also an issue with the CWD under WSGI, which is not the app root but rather the system root, which required a small patch to the catalog app.
+
 ### Apache
 
 An Apache virtual server was configured pointing to `/etc/www/fsnd_p4_catalog`, and enabled. The conf file is in this repo. The default site was disabled.
