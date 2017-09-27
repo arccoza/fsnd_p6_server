@@ -20,7 +20,7 @@ There were issues with module references when running the app through WSGI. The 
 
 There was also an issue with the CWD under WSGI, which is not the app root but rather the system root, which required a small patch to the catalog app.
 
-And another issue with the Authorization header not being passed to the python app from Apache WSGI, add `WSGIPassAuthorization On` to the conf file fixed the problem.
+And another issue with the Authorization header not being passed to the python app from Apache WSGI, adding `WSGIPassAuthorization On` to the conf file fixed the problem.
 
 ### Apache
 
