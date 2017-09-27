@@ -20,6 +20,8 @@ There were issues with module references when running the app through WSGI. The 
 
 There was also an issue with the CWD under WSGI, which is not the app root but rather the system root, which required a small patch to the catalog app.
 
+And another issue with the Authorization header not being passed to the python app from Apache WSGI, add `WSGIPassAuthorization On` to the conf file fixed the problem.
+
 ### Apache
 
 An Apache virtual server was configured pointing to `/etc/www/fsnd_p4_catalog`, and enabled. The conf file is in this repo. The default site was disabled.
@@ -38,10 +40,12 @@ A Postgres role was added for the catalog app to use for DB access, using peer a
 
 4. [https://stackoverflow.com/questions/12081789/pythons-working-directory-when-running-with-wsgi-and-apache](https://stackoverflow.com/questions/12081789/pythons-working-directory-when-running-with-wsgi-and-apache)
 
-4. [https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
+5. [https://stackoverflow.com/questions/13387516/authorization-header-missing-in-django-rest-framework-is-apache-to-blame](https://stackoverflow.com/questions/13387516/authorization-header-missing-in-django-rest-framework-is-apache-to-blame)
 
-5. [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+6. [https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
 
-6. [https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress](https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress)
+7. [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
-7. [https://askubuntu.com/a/524362](https://askubuntu.com/a/524362)
+8. [https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress](https://stackoverflow.com/questions/40537159/psycopg2-peer-authentication-for-user-postgress)
+
+9. [https://askubuntu.com/a/524362](https://askubuntu.com/a/524362)
