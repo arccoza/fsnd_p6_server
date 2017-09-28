@@ -2,7 +2,13 @@
 
 ## Access
 
+### Webapp
+
 [188.166.100.114.xip.io/](http://188.166.100.114.xip.io/)
+
+### SSH
+
+`ssh -p 2200 grader@188.166.100.114`
 
 ## Installed
 
